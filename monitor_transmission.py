@@ -16,7 +16,7 @@ import sys
 TRANSMISSION_REMOTE_PATH = "/usr/bin/transmission-remote"  # path al binario transmission-remote
 RPC_HOST = "127.0.0.1:9091"  # host:porta del demone Transmission (di solito 9091)
 RPC_USER = "pi"        # le credenziali RPC impostate in /etc/transmission-daemon/settings.json
-RPC_PASS = "******"
+RPC_PASS = ""
 TORRENT_IDS = ["all"]        # Se vuoi monitorare TUTTI i torrent, usa ["all"]
                              # Altrimenti puoi specificare una lista di ID, es: ["1", "2"]
 

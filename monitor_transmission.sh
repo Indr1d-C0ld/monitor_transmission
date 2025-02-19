@@ -11,7 +11,8 @@ if screen -list | grep -q "$SCREEN_SESSION"; then
     echo "La sessione screen '$SCREEN_SESSION' è già in esecuzione."
 else
     # Avvia una nuova sessione screen in modalità detached
-    screen -dmS "$SCREEN_SESSION" /usr/bin/python3 "$SCRIPT_PATH"
+#    screen -dmS "$SCREEN_SESSION" /usr/bin/python3 "$SCRIPT_PATH"
+    /usr/bin/screen -dmS "$SCREEN_SESSION" /usr/bin/python3 "$SCRIPT_PATH"
     echo "Avviata la sessione screen '$SCREEN_SESSION' con lo script Python."
 fi
 
